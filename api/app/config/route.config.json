@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "route": "/v1/artists/:artistId/albums",
+      "method": "GET",
+      "controller": "../controllers/v1/albums/album-controller"
+    }
+  ]
+}

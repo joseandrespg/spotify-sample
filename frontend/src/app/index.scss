@@ -1,0 +1,80 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
+
+$background_color : #121314;
+$background_light_color: #1c1c1f;
+$text-color: #dfe0e6;
+$secondary-color: #07d159;
+
+.html, body {
+  background: $background_color;
+  color: $text-color;
+}
+
+.search-box {
+  margin: 10px;
+
+  .input-group {
+    input {
+      border: none;
+      color: $text-color;
+      background: $background_light_color;
+    }
+
+    .input-group-btn {
+      .btn {
+        background: $secondary-color;
+
+        .glyphicon {
+          color: $text-color;
+        }
+      }
+
+    }
+  }
+}
+
+.spotify-album {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .spotify-data {
+    background: $background_light_color;
+    padding: 20px;
+    height: 100px;
+
+    a {
+      font-size: 14px;
+      text-overflow: ellipsis;
+      color: $text-color;
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+  }
+}

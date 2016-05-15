@@ -1,0 +1,21 @@
+<div class="container">
+
+  <nav class="search-box">
+    <div class="row">
+      <div class="input-group col-md-12">
+        <input type="search" class="search-query form-control" placeholder="Search" ng-model="main.search"/>
+        <span class="input-group-btn">
+            <button class="btn" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="album in main.albums | filter : { name: main.search } |orderBy:'name'">
+      <spotify-album album="album"></spotify-album>
+    </div>
+  </div>
+</div>
